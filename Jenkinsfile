@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'docker-node'
+    }
 
     environment {
         IMAGE_NAME = 'umerakmal104/flask-app'
